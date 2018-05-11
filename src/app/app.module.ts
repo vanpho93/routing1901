@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home.component';
 import { SignInComponent } from './components/sign-in.component';
 import { SignUpComponent } from './components/sign-up.component';
 import { ProfileComponent } from './components/profile.component';
+import { WeatherComponent } from './components/weather.component';
 import { PageNotFoundComponent } from './components/page-not-found.component';
 
 const routesConfig: Routes = [
@@ -16,6 +17,7 @@ const routesConfig: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'weather', component: WeatherComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -27,6 +29,7 @@ const routesConfig: Routes = [
     SignInComponent,
     SignUpComponent,
     ProfileComponent,
+    WeatherComponent,
     PageNotFoundComponent
   ],
   imports: [

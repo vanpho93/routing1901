@@ -11,6 +11,15 @@
       <a routerLink="/profile" routerLinkActive="active">Profile</a>
       <a routerLink="/sign-in" routerLinkActive="active">Sign In</a>
       <a routerLink="/sign-up" routerLinkActive="active">Sign Up</a>
+      <br><br>
+      <a
+        *ngFor="let cityName of cityNames"
+        routerLink="/weather/{{ cityName }}"
+      >
+        {{ cityName }}
+      </a>
+      <a routerLink="/sign-up" routerLinkActive="active">Sign Up</a>
+      <br><br>
   </nav>
   <router-outlet></router-outlet>
 </div>
