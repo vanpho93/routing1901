@@ -1,10 +1,16 @@
 <div class="container">
   <nav>
-      <a routerLink="/">Home</a>
-      <a routerLink="/friend">Friend</a>
-      <a routerLink="/profile">Profile</a>
-      <a routerLink="/sign-in">Sign In</a>
-      <a routerLink="/sign-up">Sign Up</a>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+      <a routerLink="/friend" routerLinkActive="active">Friend</a>
+      <a routerLink="/profile" routerLinkActive="active">Profile</a>
+      <a routerLink="/sign-in" routerLinkActive="active">Sign In</a>
+      <a routerLink="/sign-up" routerLinkActive="active">Sign Up</a>
   </nav>
   <router-outlet></router-outlet>
 </div>
