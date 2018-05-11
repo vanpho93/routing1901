@@ -6,6 +6,8 @@ import { WeatherService } from '../services/weather.service';
     selector: 'app-weather',
     template: `
         <p>Weather Component</p>
+        <h3>Thoi tiet hien tai cua HaNoi:</h3>
+        <p>Nhiet do 30<sup>o</sup>C</p>
     `,
     providers: [WeatherService]
 })
