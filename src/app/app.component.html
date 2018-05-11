@@ -15,10 +15,10 @@
       <a
         *ngFor="let cityName of cityNames"
         routerLink="/weather/{{ cityName }}"
+        routerLinkActive="active"
       >
         {{ cityName }}
       </a>
-      <a routerLink="/sign-up" routerLinkActive="active">Sign Up</a>
       <br><br>
   </nav>
   <router-outlet></router-outlet>

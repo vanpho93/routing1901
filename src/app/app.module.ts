@@ -17,7 +17,7 @@ const routesConfig: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'weather', component: WeatherComponent },
+  { path: 'weather/:cityName', component: WeatherComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
